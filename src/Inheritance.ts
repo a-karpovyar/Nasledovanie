@@ -17,9 +17,9 @@ export class Person {
     readonly _secondName: string;
     readonly _age: number;
     constructor(data: IPersonData) {
-        (this._age = data.age),
-            (this._name = data.name),
-            (this._secondName = data.secondName);
+        this._age = data.age;
+        this._name = data.name;
+        this._secondName = data.secondName;
     }
     getData(): IPersonData {
         return {
